@@ -241,6 +241,7 @@ footer a {
     margin: 5px 5px 5px 5px
 }
 
+/* This helps the web components to be responsive, adjusting the scales in mobile */
 @media screen and (max-width: 768px) {
     body {
         font-size: 16px;
