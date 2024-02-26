@@ -1,0 +1,19 @@
+
+
+    /* Hiding anchor tags being appended on the URL */
+    // window.addEventListener("DOMContentLoaded", (e) => {
+    //     const anchors = document.querySelectorAll('a');
+    //     anchors.forEach(anchor => {
+    //         anchor.addEventListener('click', function (event) {
+    //             event.preventDefault();
+    //         });
+    //     })
+    // });
+
+    // $(document).on('click', 'a', function (e) {
+    //     if ($(this).attr('href').startsWith('#')) {
+    //         e.preventDefault();
+    //     }
+    // });
+
+//     or by adding `onclick="preventDefault();"` on the anchor tags
