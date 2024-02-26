@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Nara's Profile</title>
     <link rel="icon" href="img/icon.ico" sizes="any">
-    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import '@fontsource/jetbrains-mono/400.css';
+    </style>
 </head>
 
 <body>
@@ -165,26 +169,6 @@
         navigator.clipboard.writeText('vianneynara')
             .then(() => alert('Discord username copied to clipboard!'))
             .catch(err => console.error('Could not copy text: ', err));
-    });
-
-    /* Hiding anchor tags being appended on the URL */
-    window.addEventListener("DOMContentLoaded", (e) => {
-        const anchors = document.querySelectorAll('a');
-        anchors.forEach(anchor => {
-            anchor.addEventListener('click', function (event) {
-                event.preventDefault();
-                const href = this.getAttribute('href');
-
-                if (href === '#') {
-                    window.scrollTo({top: 0, behavior: 'smooth'});
-                } else if (href.startsWith('#')) {
-                    const target = document.querySelector(href);
-                    target.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    window.location.href = href;
-                }
-            });
-        })
     });
 </script>
 </html>
