@@ -153,14 +153,14 @@
 
 <script>
     /* This mocks up the email sent, karena belum di buat, lom ngerti. */
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
         event.preventDefault();
         alert('Email Sent!');
         this.reset();
     });
 
     /* This copies my Discord username to the clipboard */
-    document.getElementById('copyDiscordUsername').addEventListener('click', function(event) {
+    document.getElementById('copyDiscordUsername').addEventListener('click', function (event) {
         event.preventDefault();
         navigator.clipboard.writeText('vianneynara')
             .then(() => alert('Discord username copied to clipboard!'))
@@ -171,7 +171,7 @@
     window.addEventListener("DOMContentLoaded", (e) => {
         const anchors = document.querySelectorAll('a');
         anchors.forEach(anchor => {
-            anchor.addEventListener('click', function(event) {
+            anchor.addEventListener('click', function (event) {
                 event.preventDefault();
                 const href = this.getAttribute('href');
 
